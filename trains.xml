@@ -1,0 +1,7208 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<train_configs version = "1">
+
+	<train_config
+		name = "freight_config0"
+		populate_train_dist = "40.0"
+		announce_stations = "false"
+		doors_beep = "false"
+		carriages_hang = "false"
+		carriages_swing = "false"
+		link_tracks_with_adjacent_stations = "true"
+		no_random_spawn = "true"
+		carriage_gap = "0.1">
+		
+		<carriage
+				model_name = "freight"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "1.65"
+		repeat_count = "1" />
+		
+		<carriage
+			model_name = "freightcar"
+			max_peds_per_carriage = "0"
+			flip_model_dir = "false"
+			do_interior_lights = "true"
+			carriage_vert_offset = "0.70"
+		repeat_count = "2" />					
+	</train_config>
+	
+	<train_config
+			name = "freight_config1"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "8" />					
+	</train_config>
+
+	<train_config
+			name = "freight_config2"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "true"
+            no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightcont2"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightgrain"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "tankercar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "1" />
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />					
+	</train_config>
+
+	<train_config
+			name = "freight_config3"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />				
+
+			<carriage
+				model_name = "tankercar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.99"
+			repeat_count = "3" />	
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "2" />		
+			
+			<carriage
+				model_name = "tankercar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.99"
+			repeat_count = "2" />	
+	</train_config>
+
+	<train_config
+			name = "freight_config4"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightgrain"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgrain"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "3" />
+			
+			<carriage
+				model_name = "freightgrain"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.99"
+			repeat_count = "2" />						
+	</train_config>
+
+	<train_config
+			name = "freight_config5"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "4" />	
+			
+			<carriage
+				model_name = "freightgrain"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.99"
+			repeat_count = "1" />
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+	</train_config>
+
+	<train_config
+			name = "freight_config6"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "true"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "2" />
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+
+			<carriage
+					model_name = "tankercar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "1" />					
+	</train_config>
+
+	<train_config
+			name = "freight_config7"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "3" />	
+
+			<carriage
+				model_name = "freightcont2"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "3" />	
+
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "2" />						
+	</train_config>
+
+	<train_config
+			name = "freight_config8"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightcont2"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "2" />
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+			
+			<carriage
+					model_name = "freightcont2"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "2" />
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+
+			<carriage
+				model_name = "tankercar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.99"
+			repeat_count = "1" />					
+	</train_config>
+
+	<train_config
+			name = "freight_config9"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightgrain"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "2" />	
+
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightgrain"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "1" />	
+	</train_config>
+
+	<train_config
+			name = "freight_config10"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "3" />
+
+			<carriage
+					model_name = "freightcont2"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "2" />	
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "3" />	
+	</train_config>
+
+	<train_config
+			name = "freight_config11"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "5" />			
+	</train_config>
+
+	<train_config
+			name = "freight_config12"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightgrain"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "3" />
+
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+			
+			<carriage
+					model_name = "freightgrain"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "2" />
+	</train_config>
+
+	<train_config
+			name = "freight_config13"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "2" />
+
+			<carriage
+					model_name = "tankercar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "3" />	
+
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "3" />					
+	</train_config>
+
+	<train_config
+			name = "freight_config14"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+			
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "3" />	
+			
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+	</train_config>
+
+	<train_config
+			name = "freight_config15"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgrain"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "2" />	
+			
+			<carriage
+					model_name = "freightgrain"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+	</train_config>
+
+	<train_config
+			name = "freight_config16"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "tankercar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "3" />	
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "tankercar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "2" />					
+	</train_config>
+
+	<train_config
+			name = "freight_config17"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "true"
+			no_random_spawn = "true"
+			carriage_gap = "0.0">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont2"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "40" />				
+	</train_config>
+
+	<train_config
+			name = "freight_config18"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "true"
+			no_random_spawn = "true"
+			carriage_gap = "0.0">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+				
+	</train_config>
+
+	<train_config
+			name = "freight_config19"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "true"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "tankercar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.99"
+			repeat_count = "2" />					
+	</train_config>
+
+	<train_config
+			name = "freight_config20"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "true"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont2"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "3" />				
+	</train_config>
+
+	<train_config
+			name = "freight_config21"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "true"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "metrotrain"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.4"
+			repeat_count = "1" />			
+	</train_config>
+
+	<train_config
+			name = "freight_config22"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "true"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+
+			<carriage
+					model_name = "freightcar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "12" />		
+	</train_config>
+	
+	<train_config
+			name = "freight_config23"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "true"
+			no_random_spawn = "true"
+			carriage_gap = "0.1">
+			
+			<carriage
+					model_name = "freight"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+			
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+		
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+		
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />	
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont1"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+			
+			<carriage
+				model_name = "freightcar"
+				max_peds_per_carriage = "0"
+				flip_model_dir = "false"
+				do_interior_lights = "true"
+				carriage_vert_offset = "0.70"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_interm01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_interm02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "7" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_interm03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_interm04"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+	</train_config>
+	
+	<train_config
+			name = "med_interm01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+	</train_config>
+	
+	<train_config
+			name = "med_interm02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "7" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_interm03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "7" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_interm04"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "7" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "9" />
+	</train_config>
+
+	<train_config
+			name = "long_interm01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "9" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "9" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+	</train_config>
+	
+	<train_config
+			name = "long_interm02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "10" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "9" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+	</train_config>
+	
+	<train_config
+			name = "long_interm03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "8" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "long_interm04"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "7" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "8" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_box01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_box02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_box03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_box01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+	</train_config>
+			
+	<train_config
+			name = "med_box02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "med_box03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "7" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_raw01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_raw02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_raw03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_raw04"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+	</train_config>
+	
+	<train_config
+			name = "med_raw01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "med_raw02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "6" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "med_raw03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+	</train_config>
+	
+	<train_config
+			name = "med_raw04"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "long_raw01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "7" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+	</train_config>
+	
+	<train_config
+			name = "long_raw02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "long_raw03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "7" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_tank01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_tank02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_tank03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_tank04"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+	</train_config>
+	
+	<train_config
+			name = "med_tank01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "med_tank02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_tank03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_tank04"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "long_tank01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "7" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+	</train_config>
+	
+	<train_config
+			name = "long_tank02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "7" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "7" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "long_tank03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "10" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "med_auto01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightrack"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "15" />
+	</train_config>
+	
+	<train_config
+			name = "long_auto01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightrack"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "25" />
+	</train_config>
+	
+	<train_config
+			name = "super_mix01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightrack"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "super_mix02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "10" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightrack"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightrack"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "7" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "super_mix03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "sd70mac"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "gevo"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightdef"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflatlogs"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightbeamc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightbeam"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbeamc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightboxlarge"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freighttankbulk"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbeamc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflatlogs"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightbox"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighttanklong"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightbeamc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbeam"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightbeamc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflattank"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightbeamc"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightrack"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgraincar"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freighthopper"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightrack"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcoal"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightgondola"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "5" />
+			
+			<carriage
+					model_name = "freightflat"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "freightcont"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.55"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "freightcaboose"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "3" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "4" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak04"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak05"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak06"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak07"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "3" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak08"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "4" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak09"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "streakcoastercab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak10"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "streakcoastercab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak11"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoastercab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak12"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoastercab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "3" />
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak13"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak14"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "2" />
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "shrt_streak15"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakclassic"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "5" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak04"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "5" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak05"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak06"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak07"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "5" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak08"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak09"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak10"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "5" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak11"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "streakcoastercab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak12"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoastercab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak13"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "5" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak14"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "streakcoastercab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "med_streak15"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoastercab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "4" />
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak01"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "7" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak02"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "6" />
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak03"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "6" />
+			
+			<carriage
+					model_name = "streak42"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak04"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "7" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak05"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "6" />
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak06"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "6" />
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak07"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "7" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak08"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "6" />
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak09"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakc"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "6" />
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak10"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "7" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak11"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "6" />
+			
+			<carriage
+					model_name = "streakcoastercab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak12"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoastercab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "6" />
+			
+			<carriage
+					model_name = "streakcoaster"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.64"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak13"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "7" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak14"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "false"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "6" />
+			
+			<carriage
+					model_name = "streakcoastercab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+	</train_config>
+	
+	<train_config
+			name = "long_streak15"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "false"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "streakcoastercab"
+					max_peds_per_carriage = "7"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "streakcoasterc"
+					max_peds_per_carriage = "10"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "1.76"
+			repeat_count = "6" />
+			
+			<carriage
+					model_name = "streak"
+					max_peds_per_carriage = "0"
+					flip_model_dir = "true"
+					do_interior_lights = "false"
+					carriage_vert_offset = "1.65"
+			repeat_count = "2" />
+	</train_config>
+	
+	<train_config
+			name = "metro_config0"
+			populate_train_dist = "40.0"
+			announce_stations = "false"
+			doors_beep = "false"
+			carriages_hang = "false"
+			carriages_swing = "false"
+			link_tracks_with_adjacent_stations = "true"
+			carriage_gap = "-0.4">
+			
+			<carriage
+					model_name = "metrotrain"
+					max_peds_per_carriage = "4"
+					flip_model_dir = "false"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.4"
+			repeat_count = "1" />
+			
+			<carriage
+					model_name = "metrotrain"
+					max_peds_per_carriage = "4"
+					flip_model_dir = "true"
+					do_interior_lights = "true"
+					carriage_vert_offset = "0.4"
+			repeat_count = "1" />				
+	</train_config>		
+	
+	<train_config_group name = "freight_group">
+		<train_config_ref name = "freight_config0" />
+		<train_config_ref name = "freight_config1" />
+		<train_config_ref name = "freight_config2" />
+		<train_config_ref name = "freight_config3" />
+		<train_config_ref name = "freight_config4" />
+		<train_config_ref name = "freight_config5" />
+		<train_config_ref name = "freight_config6" />
+		<train_config_ref name = "freight_config7" />
+		<train_config_ref name = "freight_config8" />
+		<train_config_ref name = "freight_config9" />
+		<train_config_ref name = "freight_config10" />
+		<train_config_ref name = "freight_config11" />
+		<train_config_ref name = "freight_config12" />
+		<train_config_ref name = "freight_config13" />
+		<train_config_ref name = "freight_config14" />
+		<train_config_ref name = "freight_config15" />
+		<train_config_ref name = "freight_config16" />
+		<train_config_ref name = "freight_config17" />
+		<train_config_ref name = "freight_config18" />
+		<train_config_ref name = "freight_config19" />
+		<train_config_ref name = "freight_config20" />
+		<train_config_ref name = "freight_config21" />
+		<train_config_ref name = "freight_config22" />	
+		<train_config_ref name = "freight_config23" />
+		<train_config_ref name = "shrt_interm01" />
+		<train_config_ref name = "shrt_interm02" />
+		<train_config_ref name = "shrt_interm03" />
+		<train_config_ref name = "shrt_interm04" />
+		<train_config_ref name = "med_interm01" />
+		<train_config_ref name = "med_interm02" />
+		<train_config_ref name = "med_interm03" />
+		<train_config_ref name = "med_interm04" />
+		<train_config_ref name = "long_interm01" />
+		<train_config_ref name = "long_interm02" />
+		<train_config_ref name = "long_interm03" />
+		<train_config_ref name = "long_interm04" />
+		<train_config_ref name = "shrt_box01" />
+		<train_config_ref name = "shrt_box02" />
+		<train_config_ref name = "shrt_box03" />
+		<train_config_ref name = "med_box01" />
+		<train_config_ref name = "med_box02" />
+		<train_config_ref name = "med_box03" />
+		<train_config_ref name = "shrt_raw01" />
+		<train_config_ref name = "shrt_raw02" />
+		<train_config_ref name = "shrt_raw03" />
+		<train_config_ref name = "shrt_raw04" />
+		<train_config_ref name = "med_raw01" />
+		<train_config_ref name = "med_raw02" />
+		<train_config_ref name = "med_raw03" />
+		<train_config_ref name = "med_raw04" />
+		<train_config_ref name = "long_raw01" />
+		<train_config_ref name = "long_raw02" />
+		<train_config_ref name = "long_raw03" />
+		<train_config_ref name = "shrt_tank01" />
+		<train_config_ref name = "shrt_tank02" />
+		<train_config_ref name = "shrt_tank03" />
+		<train_config_ref name = "shrt_tank04" />
+		<train_config_ref name = "med_tank01" />
+		<train_config_ref name = "med_tank02" />
+		<train_config_ref name = "med_tank03" />
+		<train_config_ref name = "med_tank04" />
+		<train_config_ref name = "long_tank01" />
+		<train_config_ref name = "long_tank02" />
+		<train_config_ref name = "long_tank03" />
+		<train_config_ref name = "med_auto01" />
+		<train_config_ref name = "long_auto01" />
+		<train_config_ref name = "shrt_wood01" />
+		<train_config_ref name = "shrt_wood02" />
+		<train_config_ref name = "shrt_wood03" />
+		<train_config_ref name = "med_wood01" />
+		<train_config_ref name = "med_wood02" />
+		<train_config_ref name = "long_wood01" />
+		<train_config_ref name = "long_wood02" />
+		<train_config_ref name = "super_mix01" />
+		<train_config_ref name = "super_mix02" />
+		<train_config_ref name = "super_mix03" />
+		<!--=================================-->
+		<train_config_ref name = "shrt_streak01" />
+		<train_config_ref name = "shrt_streak02" />
+		<train_config_ref name = "shrt_streak03" />
+		<train_config_ref name = "shrt_streak04" />
+		<train_config_ref name = "shrt_streak05" />
+		<train_config_ref name = "shrt_streak06" />
+		<train_config_ref name = "shrt_streak07" />
+		<train_config_ref name = "shrt_streak08" />
+		<train_config_ref name = "shrt_streak09" />
+		<train_config_ref name = "shrt_streak10" />
+		<train_config_ref name = "shrt_streak11" />
+		<train_config_ref name = "shrt_streak12" />
+		<train_config_ref name = "shrt_streak13" />
+		<train_config_ref name = "shrt_streak14" />
+		<train_config_ref name = "shrt_streak15" />
+		<train_config_ref name = "med_streak01" />
+		<train_config_ref name = "med_streak02" />
+		<train_config_ref name = "med_streak03" />
+		<train_config_ref name = "med_streak04" />
+		<train_config_ref name = "med_streak05" />
+		<train_config_ref name = "med_streak06" />
+		<train_config_ref name = "med_streak07" />
+		<train_config_ref name = "med_streak08" />
+		<train_config_ref name = "med_streak09" />
+		<train_config_ref name = "med_streak10" />
+		<train_config_ref name = "med_streak11" />
+		<train_config_ref name = "med_streak12" />
+		<train_config_ref name = "med_streak13" />
+		<train_config_ref name = "med_streak14" />
+		<train_config_ref name = "med_streak15" />
+		<train_config_ref name = "long_streak01" />
+		<train_config_ref name = "long_streak02" />
+		<train_config_ref name = "long_streak03" />
+		<train_config_ref name = "long_streak04" />
+		<train_config_ref name = "long_streak05" />
+		<train_config_ref name = "long_streak06" />
+		<train_config_ref name = "long_streak07" />
+		<train_config_ref name = "long_streak08" />
+		<train_config_ref name = "long_streak09" />
+		<train_config_ref name = "long_streak10" />
+		<train_config_ref name = "long_streak11" />
+		<train_config_ref name = "long_streak12" />
+		<train_config_ref name = "long_streak13" />
+		<train_config_ref name = "long_streak14" />
+		<train_config_ref name = "long_streak15" />
+	</train_config_group>
+	
+	<train_config_group name = "metro_group">
+		<train_config_ref name = "metro_config0" />
+	</train_config_group>
+	
+</train_configs>
