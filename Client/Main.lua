@@ -1,4 +1,4 @@
-local Train_Entities = {}
+--[[local Train_Entities = {}
 
 
 local TransferPoint = {
@@ -6,7 +6,7 @@ local TransferPoint = {
     R1 = vector4(751.67, -2313.79, 18.32, 0),
     R2 = vector4(756.26, -2314.19, 18.32, 0)
 }
-
+---@deprecated
 function SpawnTrains()
     LoadTrainModels()
 
@@ -99,7 +99,7 @@ function SpawnTrains()
         end
     end
 end
-
+---@deprecated
 function Debug_ReplaceTrain(r)
     local t = Train_Entities[r][1]
     local v = Train_Entities[r]
@@ -142,4 +142,4 @@ function Debug_ReplaceTrain(r)
     print("Delay for Spawning the Next Freight")
     Wait(30000)
     print("Delay Finished")
-end
+end]]

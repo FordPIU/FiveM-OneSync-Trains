@@ -1,3 +1,4 @@
+--[[---@deprecated
 local function IsContained(refTable, search)
     for _,v in pairs(refTable) do
         if v == search then
@@ -6,7 +7,7 @@ local function IsContained(refTable, search)
     end
     return false
 end
-
+---@deprecated
 function RemoveTrains()
     local Models = GetTrainModels()
     for _,v in pairs(GetGamePool("CVehicle")) do
@@ -36,4 +37,4 @@ end)
 
 RegisterNetEvent("CR.Trains:RespawnTrain", function(i)
     Debug_ReplaceTrain(i)
-end)
+end)]]

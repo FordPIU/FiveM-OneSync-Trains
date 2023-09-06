@@ -1,4 +1,4 @@
-local Strings = {
+--[[local Strings = {
     "freight_config0",
     "freight_config1",
     "freight_config2",
@@ -63,8 +63,77 @@ local Strings = {
     "docks_freight1",
     "docks_freight2",
 }
-
+---@deprecated
 function DebugVariationType(VariationID)
     VariationID = VariationID + 1
     print("Variation is Config Type " .. Strings[VariationID])
 end
+    "freight_config0",
+    "freight_config1",
+    "freight_config2",
+    "freight_config3",
+    "freight_config4",
+    "freight_config5",
+    "freight_config6",
+    "freight_config7",
+    "freight_config8",
+    "freight_config9",
+    "freight_config10",
+    "freight_config11",
+    "freight_config12",
+    "freight_config13",
+    "freight_config14",
+    "freight_config15",
+    "freight_config16",
+    "freight_config17",
+    "freight_config18",
+    "freight_config19",
+    "freight_config20",
+    "freight_config21",
+    "freight_config22",
+    "freight_config23",
+    "long_container1",
+    "long_container2",
+    "long_intermodal_double",
+    "long_boxcar1",
+    "long_engine",
+    "long_mixed1",
+    "long_mixed2",
+    "long_mixed3",
+    "long_tanker1",
+    "long_empty1",
+    "med_boxcar1",
+    "med_container1",
+    "med_engine",
+    "med_engine2",
+    "med_mixed1",
+    "med_mixed2",
+    "med_tanker1",
+    "med_empty1",
+    "short_boxcar1",
+    "short_container2",
+    "short_engine",
+    "short_mixed1",
+    "short_tanker1",
+    "short_tanker_boxcar",
+    "special1",
+    "superfreight1",
+    "superfreight_tanker1",
+    "superfreight_engine",
+    "metro_config0",
+    "metro_config1",
+    "metro_config2",
+    "metro_config3",
+    "metro_config4",
+    "metro_config5",
+    "metro_config6",
+    "metro_freight1",
+    "metro_freight2",
+    "docks_freight1",
+    "docks_freight2",
+}
+---@deprecated
+function DebugVariationType(VariationID)
+    VariationID = VariationID + 1
+    print("Variation is Config Type " .. Strings[VariationID])
+end]]

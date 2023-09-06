@@ -1,3 +1,4 @@
+--[[---@deprecated
 local function SetSharedFuncts(Entity)
     local Entity_ID = NetworkGetNetworkIdFromEntity(Entity)
 
@@ -8,20 +9,20 @@ local function SetSharedFuncts(Entity)
     SetNetworkIdCanMigrate(Entity_ID, true)
     --TriggerServerEvent('cr_GSW_9892719507210957_SETCULL', Entity_ID, true)
 end
-
+---@deprecated
 function SetTrainFuncts(Entity, Data_Speed)
     SetSharedFuncts(Entity)
 
     SetTrainCruiseSpeed(Entity, Data_Speed)
 end
-
+---@deprecated
 function SetDriverFuncts(Entity)
     SetSharedFuncts(Entity)
 
     SetBlockingOfNonTemporaryEvents(Entity, true)
     SetPedFleeAttributes(Entity, 0, 0)
 end
-
+---@deprecated
 function CreateDriverInsideTrain(Entity)
     local Spawn_Driver = CreatePedInsideVehicle(Entity, 26, `s_m_m_lsmetro_01`, -1, 1, true)
 
@@ -33,7 +34,7 @@ function CreateDriverInsideTrain(Entity)
 
     return Spawn_Driver
 end
-
+---@deprecated
 function CreateTrain(TrainData, CreateDriver, Debug)
     local Spawn_Variation = TrainData[1]
     local Spawn_Coords = TrainData[2]
@@ -58,4 +59,4 @@ function CreateTrain(TrainData, CreateDriver, Debug)
     print("Created Train Entity w/ Variation " .. Spawn_Variation)
 
     return Spawn_Entity, Spawn_Driver
-end
+end]]

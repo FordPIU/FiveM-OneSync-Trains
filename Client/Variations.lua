@@ -137,8 +137,8 @@ local Spawns = {
         vector4(2463.0, 3872.0, 38.8, 0),
         vector4(1164.0, 6433.0, 32.0, 0),
     }
-}
-
+}--[[
+---@deprecated
 local function DataToBool(i)
     if i == 0 then
         return false
@@ -150,6 +150,7 @@ local function DataToBool(i)
 end
 
 local lastSpawns = {}
+---@deprecated
 local function GetSpawnPoint(Type)
     local spawns = Spawns[Type]
     local nspawn = spawns[math.random(1, #spawns)]
@@ -168,6 +169,7 @@ local function GetSpawnPoint(Type)
 end
 
 local LS_GAE = nil
+---@deprecated
 local function GetAvailableEntries(searchTable)
     if LS_GAE ~= nil then
         if LS_GAE[1] == searchTable then
@@ -191,6 +193,7 @@ local function GetAvailableEntries(searchTable)
     return r
 end
 
+---@deprecated
 local function GetTrainVariation(searchTable)
     local r = nil
     local n = 0
@@ -206,6 +209,7 @@ local function GetTrainVariation(searchTable)
     return n, r
 end
 
+---@deprecated
 function GetVariation(Type)
     local ret_Table = Freights
 
@@ -223,4 +227,4 @@ function GetVariation(Type)
     print("Spawning at " .. ret_SpawnPosition .. " with a Direction of " .. ret_Spawn[4])
 
     return {ret_Pos, ret_SpawnPosition, ret_Direction, ret_Speed}
-end
+end]]
