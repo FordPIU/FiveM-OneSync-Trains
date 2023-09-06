@@ -148,20 +148,25 @@ local Spawns = {
     }
 }
 
+local spawnCoordsDelay = {}
+local TrainsSpawned = false
+local TrainEntities = {}
+local TrainNodes = {}
+
 ---Load Train Models into Memory
 local function loadTrainModels()
-    print("Loading Train Models")
+    --print("Loading Train Models")
 
     for i, v in pairs(Models) do
         RequestModel(v)
 
         while not HasModelLoaded(v) do
             Wait(10)
-            print("Loading Model " .. i)
+            --print("Loading Model " .. i)
         end
     end
 
-    print("Loaded all Train Models")
+    --print("Loaded all Train Models")
 end
 
 ---Get all valid indexes of a table
@@ -237,14 +242,13 @@ local function getVariation(Type)
     local trainSpawnPosition = vector3(trainSpawn[1], trainSpawn[2], trainSpawn[3])
     local trainSpeed = trainData.Speed
 
-    print("Call to get " ..
-        Type .. " Variation, Returning Variation #" .. trainVariationId .. ", Config: " .. trainData.Name)
-    print("Spawning at " .. trainSpawnPosition)
+    --print("Call to get " ..
+    --Type .. " Variation, Returning Variation #" .. trainVariationId .. ", Config: " .. trainData.Name)
+    --print("Spawning at " .. trainSpawnPosition)
 
     return { trainVariationId, trainSpawnPosition, trainSpeed }
 end
 
-local spawnCoordsDelay = {}
 ---Creates a new train
 ---@param TrainData table fetched via getVariation()
 ---@return entity Train
@@ -254,11 +258,19 @@ local function createTrain(TrainData)
     local Spawn_Coords = TrainData[2]
 
     if spawnCoordsDelay[Spawn_Coords] and GetGameTimer() < spawnCoordsDelay[Spawn_Coords] then
-        print("Attempting a 2nd spawn at same pos, delaying...")
+        --print("Attempting a 2nd spawn at same pos, delaying...")
+        local nooneNear = true
         repeat
             Wait(0)
-        until GetGameTimer() >= spawnCoordsDelay[Spawn_Coords]
-        print("Delay finished..")
+
+            for _, data in pairs(TrainEntities) do
+                local coords = GetEntityCoords(data.train)
+                if #(coords - Spawn_Coords) < 1000.0 then
+                    nooneNear = false
+                end
+            end
+        until nooneNear
+        --print("Delay finished..")
     end
 
     local Spawn_Entity = CreateMissionTrain(Spawn_Variation, Spawn_Coords[1], Spawn_Coords[2], Spawn_Coords[3],
@@ -271,10 +283,12 @@ local function createTrain(TrainData)
     setTrainFuncts(Spawn_Entity, TrainData[3])
 
     local Spawn_Driver = createDriverInsideTrain(Spawn_Entity)
-    AddBlipForEntity(Spawn_Entity)
-    spawnCoordsDelay[Spawn_Coords] = GetGameTimer() + 30000
+    --[[local blip = AddBlipForEntity(Spawn_Entity)
+    SetBlipSprite(blip, 795)
+    SetBlipColour(blip, 27)]]
+    spawnCoordsDelay[Spawn_Coords] = GetGameTimer() + 240000
 
-    print("Created Train Entity w/ Variation " .. Spawn_Variation)
+    --print("Created Train Entity w/ Variation " .. Spawn_Variation)
 
     return Spawn_Entity, Spawn_Driver
 end
@@ -294,30 +308,27 @@ local function waitForAllPlayersToLoadModels()
 end
 
 
-local TrainsSpawned = false
-local TrainEntities = {}
-local TrainNodes = {}
 ---Spawn Metro & Normal Trains
 function SpawnTrains()
     if TrainsSpawned then return else TrainsSpawned = true end
     local MetroCount = math.random(1, 4)
-    local FreightCount = math.random(1, 10)
+    local FreightCount = math.random(3, 10)
 
-    print("\nSpawning " .. MetroCount .. " Metros")
+    --print("\nSpawning " .. MetroCount .. " Metros")
     for i = 1, MetroCount do
-        print("Getting Data for Metro Train #" .. i)
+        --print("Getting Data for Metro Train #" .. i)
         local Metro_Data = getVariation("Metro")
 
-        print("Creating Metro Train #" .. i)
+        --print("Creating Metro Train #" .. i)
         createTrain(Metro_Data)
     end
 
-    print("\nSpawning " .. FreightCount .. " Freight Trains")
+    --print("\nSpawning " .. FreightCount .. " Freight Trains")
     for i = 1, FreightCount do
-        print("Getting Data for Freight Train #" .. i)
+        --print("Getting Data for Freight Train #" .. i)
         local Freight_Data = getVariation("Freight")
 
-        print("Creating Freight Train #" .. i)
+        --print("Creating Freight Train #" .. i)
         local trainEntity, driverEntity = createTrain(Freight_Data)
 
         TrainEntities[#TrainEntities + 1] = {
@@ -331,6 +342,28 @@ function SpawnTrains()
             }
         }
     end
+end
+
+local function getCurrentTrainNode(trainEntity)
+    local trainCoords = GetEntityCoords(trainEntity)
+
+    local roundedX = math.floor(trainCoords[1] / 5) * 5
+    local roundedY = math.floor(trainCoords[2] / 5) * 5
+
+    return tostring(roundedX) .. tostring(roundedY)
+end
+
+---Master Thread
+local hasTrainModelsLoaded = false
+Citizen.CreateThread(function()
+    repeat
+        Wait(0)
+    until DoesEntityExist(PlayerPedId())
+
+    TriggerServerEvent("playerConnected")
+
+    loadTrainModels()
+    hasTrainModelsLoaded = true
 
     while true do
         Wait(1000)
@@ -345,91 +378,72 @@ function SpawnTrains()
                 if trainCoords[2] >= -450.0 and (data.currentZone == nil or data.currentZone == 0 or data.currentZone == -1) then
                     SetTrainCruiseSpeed(train, data.defaultSpeed * 5)
 
-                    data.currentZone = 1
-                    data.currentSpeed = data.defaultSpeed * 5
+                    TrainEntities[i].data.currentZone = 1
+                    TrainEntities[i].data.currentSpeed = data.defaultSpeed * 5
 
-                    print("Set Train #" .. i .. " to County Speeds")
+                    --print("Set Train #" .. i .. " to County Speeds")
                 end
 
                 -- City Speed
                 if trainCoords[2] < -450.0 and (data.currentZone == nil or data.currentZone == 1 or data.currentZone == -1) then
                     SetTrainCruiseSpeed(train, data.defaultSpeed * 0.5)
 
-                    data.currentZone = 0
-                    data.currentSpeed = data.defaultSpeed * 0.5
+                    TrainEntities[i].data.currentZone = 0
+                    TrainEntities[i].data.currentSpeed = data.defaultSpeed * 0.5
 
-                    print("Set Train #" .. i .. " to City Speeds")
+                    --print("Set Train #" .. i .. " to City Speeds")
                 end
             end
 
-            -- Node Lingering Effect?? idk what to call this
-            local currentNode = GetTrainCurrentTrackNode(train)
-            local nodeData = TrainNodes[currentNode] or nil
-
-            -- Is the Node Data Expired
-            if nodeData ~= nil then
+            -- Remove Expired Nodes
+            for nodeId, nodeData in pairs(TrainNodes) do
                 if GetGameTimer() > nodeData.expire then
-                    TrainNodes[currentNode] = nil
-                    nodeData = nil
-
-                    print("Node data expired.")
+                    TrainNodes[nodeId] = nil
+                    --print("Node " .. nodeId .. " expired.")
                 end
             end
 
-            if nodeData ~= nil then
-                if nodeData.entity ~= train and nodeData.speed < data.currentSpeed and not data.speedOverrideActive then
-                    data.speedOverrideActive = true
-                    SetTrainCruiseSpeed(train, nodeData.speed)
-                    data.currentSpeed = nodeData.speed
+            -- Utilizing nodes to slow down trains behind a slower train
+            local currentNode = getCurrentTrainNode(train)
+            local nodeData = TrainNodes[currentNode]
 
-                    print("Train #" .. i .. " slowed down to a train ahead.")
-                else
-                    print("Train #" .. i .. " is within a node, but slower than the train that set this node.")
+            if nodeData ~= nil then
+                if nodeData.entity ~= train and nodeData.speed < data.currentSpeed then
+                    TrainEntities[i].data.speedOverrideActive = true
+                    SetTrainCruiseSpeed(train, nodeData.speed)
+                    TrainEntities[i].data.currentSpeed = nodeData.speed
+
+                    --print("Train #" .. i .. " slowed down to a train ahead. Train ahead is #" .. nodeData.id)
                 end
             else
-                TrainNodes[currentNode] = {
-                    speed = data.currentSpeed * 0.75,
-                    expire = GetGameTimer() + 30000,
-                    entity = train
-                }
-
                 -- Reset
-                if data.speedOverrideActive then
-                    data.speedOverrideActive = false
-                    data.currentZone = -1
+                if data.speedOverrideActive == true then
+                    TrainEntities[i].data.speedOverrideActive = false
+                    TrainEntities[i].data.currentZone = -1
 
-                    print("Train #" .. i .. " is no longer needing to slow down for a train ahead.")
+                    --print("Train #" .. i .. " is no longer needing to slow down for a train ahead.")
                 end
-
-                print("Train #" .. i .. " set node data. Speed: " .. data.currentSpeed)
             end
-            ::skip::
+
+            TrainNodes[currentNode] = {
+                speed = data.currentSpeed * 0.5,
+                expire = GetGameTimer() + 300000,
+                entity = train,
+                id = i,
+            }
         end
     end
-end
-
----Master Thread
-local hasTrainModelsLoaded = false
-Citizen.CreateThread(function()
-    repeat
-        Wait(0)
-    until DoesEntityExist(PlayerPedId())
-
-    TriggerServerEvent("playerConnected")
-
-    loadTrainModels()
-    hasTrainModelsLoaded = true
 end)
 
 ---Events
 RegisterNetEvent("CR.Trains:SelectedHost", function()
-    print("Requested to be new host, waiting to fully load in")
+    --print("Requested to be new host, waiting to fully load in")
     repeat
         Wait(0)
     until DoesEntityExist(PlayerPedId())
-    print("Fully loaded in, ensuring all players have requested the models")
+    --print("Fully loaded in, ensuring all players have requested the models")
     waitForAllPlayersToLoadModels()
-    print("All loaded models, Spawning...")
+    --print("All loaded models, Spawning...")
     SpawnTrains()
 end)
 
@@ -447,7 +461,7 @@ end)
 
 AddEventHandler('onResourceStop', function(resourceName)
     if GetCurrentResourceName() == resourceName then
-        print("Resource stopping, deleting current trains")
+        --print("Resource stopping, deleting current trains")
         DeleteAllTrains()
     end
 end)

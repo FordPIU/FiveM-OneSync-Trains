@@ -29,7 +29,7 @@ local function deleteTrains()
 
         if TableContainsValue(Models, vM) then
             DeleteEntity(v)
-            print("Removed Entity " .. v)
+            --print("Removed Entity " .. v)
         end
     end
 
@@ -38,7 +38,7 @@ local function deleteTrains()
 
         if TableContainsValue(Models, vM) then
             DeleteEntity(v)
-            print("Removed Entity " .. v)
+            --print("Removed Entity " .. v)
         end
     end
 end

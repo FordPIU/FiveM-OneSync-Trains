@@ -41,6 +41,8 @@
         "GetEntityCoords",
         "GetEntityHeading",
         "SetTrainSpeed",
-        "GetTrainCurrentTrackNode"
+        "GetTrainCurrentTrackNode",
+        "SetBlipSprite",
+        "SetBlipColour"
     ]
 }
