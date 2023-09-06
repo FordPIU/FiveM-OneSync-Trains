@@ -293,35 +293,13 @@ local function waitForAllPlayersToLoadModels()
     until DoesEntityExist(PlayerPedId())
 end
 
-local function AreTrainsOnSameTrackAndDirection(train1, train2)
-    local train1Coords = GetEntityCoords(train1)
-    local train2Coords = GetEntityCoords(train2)
-    local train1Heading = GetEntityHeading(train1)
-    local train2Heading = GetEntityHeading(train2)
-    local angleThreshold = 20.0
-    local angleDifference = math.abs(train1Heading - train2Heading)
 
-    if angleDifference < angleThreshold then
-        return true
-    else
-        return false
-    end
-end
-
-local function SlowDownTrains(train1, train2, newSpeed)
-    SetTrainCruiseSpeed(train1, newSpeed)
-    SetTrainCruiseSpeed(train2, newSpeed)
-end
-
-local function ResetTrainSpeeds(trainEntity)
-    trainEntity.data.psActive = false
-    trainEntity.data.ccSpeed = -1
-end
-
-
+local TrainsSpawned = false
 local TrainEntities = {}
+local TrainNodes = {}
 ---Spawn Metro & Normal Trains
 function SpawnTrains()
+    if TrainsSpawned then return else TrainsSpawned = true end
     local MetroCount = math.random(1, 4)
     local FreightCount = math.random(1, 10)
 
@@ -346,10 +324,10 @@ function SpawnTrains()
             train = trainEntity,
             driver = driverEntity,
             data = {
-                dfSpeed = Freight_Data[3],
-                ccSpeed = nil,
-                crSpeed = Freight_Data[3],
-                psActive = false
+                defaultSpeed = Freight_Data[3],
+                currentZone = nil,
+                currentSpeed = Freight_Data[3],
+                speedOverrideActive = false
             }
         }
     end
@@ -362,59 +340,70 @@ function SpawnTrains()
             local data = entity.data
             local trainCoords = GetEntityCoords(train)
 
-            -- County Speed
-            if trainCoords[2] >= -450.0 and (data.ccSpeed == nil or data.ccSpeed == 0 or data.ccSpeed == -1) and data.psActive == false then
-                SetTrainCruiseSpeed(train, data.dfSpeed * 5)
+            if not data.speedOverrideActive then
+                -- County Speed
+                if trainCoords[2] >= -450.0 and (data.currentZone == nil or data.currentZone == 0 or data.currentZone == -1) then
+                    SetTrainCruiseSpeed(train, data.defaultSpeed * 5)
 
-                TrainEntities[i].data.ccSpeed = 1
-                TrainEntities[i].data.crSpeed = data.dfSpeed * 5
+                    data.currentZone = 1
+                    data.currentSpeed = data.defaultSpeed * 5
 
-                print("Set Train #" .. i .. " to County Speeds")
-            end
+                    print("Set Train #" .. i .. " to County Speeds")
+                end
 
-            -- City Speed
-            if trainCoords[2] < -450.0 and (data.ccSpeed == nil or data.ccSpeed == 1 or data.ccSpeed == -1) and data.psActive == false then
-                SetTrainCruiseSpeed(train, data.dfSpeed * 0.5)
+                -- City Speed
+                if trainCoords[2] < -450.0 and (data.currentZone == nil or data.currentZone == 1 or data.currentZone == -1) then
+                    SetTrainCruiseSpeed(train, data.defaultSpeed * 0.5)
 
-                TrainEntities[i].data.ccSpeed = 0
-                TrainEntities[i].data.crSpeed = data.dfSpeed * 0.5
+                    data.currentZone = 0
+                    data.currentSpeed = data.defaultSpeed * 0.5
 
-                print("Set Train #" .. i .. " to City Speeds")
-            end
-
-            -- Spacing
-            for j, otherEntity in pairs(TrainEntities) do
-                if j ~= i then
-                    local otherTrain = otherEntity.train
-                    local otherDriver = otherEntity.driver
-                    local otherData = otherEntity.data
-                    local otherCoords = GetEntityCoords(otherTrain)
-                    local distance = #(trainCoords - otherCoords)
-
-                    if AreTrainsOnSameTrackAndDirection(train, otherTrain) then
-                        if distance < 1000.0 and not data.psActive and not otherData.psActive then
-                            local newSpeed = math.min(data.crSpeed, otherData.crSpeed) * 0.75
-                            SlowDownTrains(train, otherTrain, newSpeed)
-
-                            data.psActive = true
-                            otherData.psActive = true
-                            data.crSpeed = newSpeed
-                            otherData.crSpeed = newSpeed
-
-                            print("Train #" ..
-                                i .. " and Train #" .. j .. " slowed down due to proximity. New Speed is " .. newSpeed)
-                        elseif distance >= 1000.0 and data.psActive and otherData.psActive then
-                            ResetTrainSpeeds(data)
-                            ResetTrainSpeeds(otherData)
-
-                            print("Train #" ..
-                                i ..
-                                " and Train #" ..
-                                j .. " no longer within proximity to each other, speeds allowed to be reset.")
-                        end
-                    end
+                    print("Set Train #" .. i .. " to City Speeds")
                 end
             end
+
+            -- Node Lingering Effect?? idk what to call this
+            local currentNode = GetTrainCurrentTrackNode(train)
+            local nodeData = TrainNodes[currentNode] or nil
+
+            -- Is the Node Data Expired
+            if nodeData ~= nil then
+                if GetGameTimer() > nodeData.expire then
+                    TrainNodes[currentNode] = nil
+                    nodeData = nil
+
+                    print("Node data expired.")
+                end
+            end
+
+            if nodeData ~= nil then
+                if nodeData.entity ~= train and nodeData.speed < data.currentSpeed and not data.speedOverrideActive then
+                    data.speedOverrideActive = true
+                    SetTrainCruiseSpeed(train, nodeData.speed)
+                    data.currentSpeed = nodeData.speed
+
+                    print("Train #" .. i .. " slowed down to a train ahead.")
+                else
+                    print("Train #" .. i .. " is within a node, but slower than the train that set this node.")
+                end
+            else
+                TrainNodes[currentNode] = {
+                    speed = data.currentSpeed * 0.75,
+                    expire = GetGameTimer() + 30000,
+                    entity = train
+                }
+
+                -- Reset
+                if data.speedOverrideActive then
+                    data.speedOverrideActive = false
+                    data.currentZone = -1
+
+                    print("Train #" .. i .. " is no longer needing to slow down for a train ahead.")
+                end
+
+                print("Train #" .. i .. " set node data. Speed: " .. data.currentSpeed)
+            end
+            ::skip::
         end
     end
 end
