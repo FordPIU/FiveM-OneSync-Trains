@@ -293,6 +293,31 @@ local function waitForAllPlayersToLoadModels()
     until DoesEntityExist(PlayerPedId())
 end
 
+local function AreTrainsOnSameTrackAndDirection(train1, train2)
+    local train1Coords = GetEntityCoords(train1)
+    local train2Coords = GetEntityCoords(train2)
+    local train1Heading = GetEntityHeading(train1)
+    local train2Heading = GetEntityHeading(train2)
+    local angleThreshold = 20.0
+    local angleDifference = math.abs(train1Heading - train2Heading)
+
+    if angleDifference < angleThreshold then
+        return true
+    else
+        return false
+    end
+end
+
+local function SlowDownTrains(train1, train2, newSpeed)
+    SetTrainCruiseSpeed(train1, newSpeed)
+    SetTrainCruiseSpeed(train2, newSpeed)
+end
+
+local function ResetTrainSpeeds(trainEntity)
+    trainEntity.data.psActive = false
+    trainEntity.data.ccSpeed = -1
+end
+
 
 local TrainEntities = {}
 ---Spawn Metro & Normal Trains
@@ -355,6 +380,40 @@ function SpawnTrains()
                 TrainEntities[i].data.crSpeed = data.dfSpeed * 0.5
 
                 print("Set Train #" .. i .. " to City Speeds")
+            end
+
+            -- Spacing
+            for j, otherEntity in pairs(TrainEntities) do
+                if j ~= i then
+                    local otherTrain = otherEntity.train
+                    local otherDriver = otherEntity.driver
+                    local otherData = otherEntity.data
+                    local otherCoords = GetEntityCoords(otherTrain)
+                    local distance = #(trainCoords - otherCoords)
+
+                    if AreTrainsOnSameTrackAndDirection(train, otherTrain) then
+                        if distance < 1000.0 and not data.psActive and not otherData.psActive then
+                            local newSpeed = math.min(data.crSpeed, otherData.crSpeed) * 0.75
+                            SlowDownTrains(train, otherTrain, newSpeed)
+
+                            data.psActive = true
+                            otherData.psActive = true
+                            data.crSpeed = newSpeed
+                            otherData.crSpeed = newSpeed
+
+                            print("Train #" ..
+                                i .. " and Train #" .. j .. " slowed down due to proximity. New Speed is " .. newSpeed)
+                        elseif distance >= 1000.0 and data.psActive and otherData.psActive then
+                            ResetTrainSpeeds(data)
+                            ResetTrainSpeeds(otherData)
+
+                            print("Train #" ..
+                                i ..
+                                " and Train #" ..
+                                j .. " no longer within proximity to each other, speeds allowed to be reset.")
+                        end
+                    end
+                end
             end
         end
     end
