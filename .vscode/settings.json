@@ -43,6 +43,12 @@
         "SetTrainSpeed",
         "GetTrainCurrentTrackNode",
         "SetBlipSprite",
-        "SetBlipColour"
+        "SetBlipColour",
+        "GetEntityHealth",
+        "SetEntityInvincible",
+        "SetRenderTrainAsDerailed",
+        "FreezeEntityPosition",
+        "GetStreetNameAtCoord",
+        "GetStreetNameFromHashKey"
     ]
 }

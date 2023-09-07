@@ -120,35 +120,24 @@ local Variations = {
         [112] = { Name = "long_streak06", Speed = 7.5 },
         [113] = { Name = "long_streak07", Speed = 7.5 },
         [114] = { Name = "long_streak08", Speed = 7.5 },
-        [115] = { Name = "long_streak09", Speed = 7.5 },]]
+        [115] = { Name = "long_streak09", Speed = 7.5 },
         [116] = { Name = "long_streak10", Speed = 7.5 },
         [117] = { Name = "long_streak11", Speed = 7.5 },
         [118] = { Name = "long_streak12", Speed = 7.5 },
         [119] = { Name = "long_streak13", Speed = 7.5 },
         [120] = { Name = "long_streak14", Speed = 7.5 },
-        [121] = { Name = "long_streak15", Speed = 7.5 },
+        [121] = { Name = "long_streak15", Speed = 7.5 },]]
     }
 }
 
 local Spawns = {
     Metro = {
-        vector3(-631.38, -1619.34, 13.12),
-        vector3(-624.5, -1624.54, 13.07),
-        vector3(538.66, -686.28, 15.48),
-        vector3(530.22, -683.79, 15.42)
+        vector3(-719.46, -1824.42, -0.65),
     },
     Freight = {
-        vector3(2533.0, 2833.0, 38.0),
-        vector3(2606.0, 2927.0, 40.0),
-        vector3(2463.0, 3872.0, 38.8),
-        vector3(1164.0, 6433.0, 32.0),
-        vector3(2106.95, 1499.16, 79.2),
-        vector3(2638.75, 121.01, 93.91),
-        vector3(2643.33, 120.08, 93.91),
-        vector3(534.55, -1224.36, 29.86),
-        vector3(529.8, -1225.04, 29.86),
-        vector3(692.21, -3125.75, 6.02),
-        vector3(696.96, -3125.62, 6.02)
+        vector3(664.58, -878.2, 22.6),
+        vector3(696.95, -3116.77, 6.02),
+        vector3(530.02, -1191.75, 29.7)
     }
 }
 
@@ -205,6 +194,7 @@ local function setTrainFuncts(Entity, Data_Speed)
     newEntityNetworking(Entity)
 
     SetTrainCruiseSpeed(Entity, Data_Speed)
+    SetEntityInvincible(Entity, false)
 end
 
 ---Handles the native calls when a new train operator is created
@@ -257,7 +247,7 @@ local function createTrain(TrainData, spawnCoords)
     local Spawn_Variation = TrainData[1]
     local Spawn_Coords = spawnCoords
 
-    if spawnCoordsDelay[Spawn_Coords] and GetGameTimer() < spawnCoordsDelay[Spawn_Coords] then
+    --[[if spawnCoordsDelay[Spawn_Coords] and GetGameTimer() < spawnCoordsDelay[Spawn_Coords] then
         print("Attempting a 2nd spawn at same pos, delaying...")
         local nooneNear = true
         repeat
@@ -271,7 +261,7 @@ local function createTrain(TrainData, spawnCoords)
             end
         until nooneNear
         print("Delay finished..")
-    end
+    end]]
 
     local Spawn_Entity = CreateMissionTrain(Spawn_Variation, Spawn_Coords[1], Spawn_Coords[2], Spawn_Coords[3],
         false, true, true, true)
@@ -286,7 +276,7 @@ local function createTrain(TrainData, spawnCoords)
     local blip = AddBlipForEntity(Spawn_Entity)
     SetBlipSprite(blip, 795)
     SetBlipColour(blip, 27)
-    spawnCoordsDelay[Spawn_Coords] = GetGameTimer() + 240000
+    --spawnCoordsDelay[Spawn_Coords] = GetGameTimer() + 240000
 
     print("Created Train Entity w/ Variation " .. Spawn_Variation)
 
@@ -334,7 +324,9 @@ function SpawnTrains()
                 defaultSpeed = Freight_Data[2],
                 currentZone = nil,
                 currentSpeed = Freight_Data[2],
-                speedOverrideActive = false
+                speedOverrideActive = false,
+                derailed = false,
+                derailOverrideActive = false,
             }
         }
     end
@@ -365,68 +357,113 @@ Citizen.CreateThread(function()
         Wait(1000)
         for i, entity in pairs(TrainEntities) do
             local train = entity.train
-            local driver = entity.driver
             local data = entity.data
             local trainCoords = GetEntityCoords(train)
 
-            if not data.speedOverrideActive then
-                -- County Speed
-                if trainCoords[2] >= -450.0 and (data.currentZone == nil or data.currentZone == 0 or data.currentZone == -1) then
-                    SetTrainCruiseSpeed(train, data.defaultSpeed * 5)
+            if data.derailed == false and data.derailOverrideActive == false then
+                if data.speedOverrideActive == false then
+                    -- County Speed
+                    if trainCoords[2] >= -450.0 and (data.currentZone == nil or data.currentZone == 0 or data.currentZone == -1) then
+                        SetTrainCruiseSpeed(train, data.defaultSpeed * 5)
 
-                    TrainEntities[i].data.currentZone = 1
-                    TrainEntities[i].data.currentSpeed = data.defaultSpeed * 5
+                        TrainEntities[i].data.currentZone = 1
+                        TrainEntities[i].data.currentSpeed = data.defaultSpeed * 5
 
-                    print("Set Train #" .. i .. " to County Speeds")
+                        print("Set Train #" .. i .. " to County Speeds")
+                    end
+
+                    -- City Speed
+                    if trainCoords[2] < -450.0 and (data.currentZone == nil or data.currentZone == 1 or data.currentZone == -1) then
+                        SetTrainCruiseSpeed(train, data.defaultSpeed * 0.9)
+
+                        TrainEntities[i].data.currentZone = 0
+                        TrainEntities[i].data.currentSpeed = data.defaultSpeed * 0.9
+
+                        print("Set Train #" .. i .. " to City Speeds")
+                    end
                 end
 
-                -- City Speed
-                if trainCoords[2] < -450.0 and (data.currentZone == nil or data.currentZone == 1 or data.currentZone == -1) then
-                    SetTrainCruiseSpeed(train, data.defaultSpeed * 0.75)
+                -- Remove Expired Nodes
+                for nodeId, nodeData in pairs(TrainNodes) do
+                    if GetGameTimer() > nodeData.expire then
+                        TrainNodes[nodeId] = nil
+                        print("Node " .. nodeId .. " expired.")
+                    end
+                end
 
-                    TrainEntities[i].data.currentZone = 0
-                    TrainEntities[i].data.currentSpeed = data.defaultSpeed * 0.75
+                -- Utilizing nodes to slow down trains behind a slower train
+                local currentNode = getCurrentTrainNode(train)
+                local nodeData = TrainNodes[currentNode]
 
-                    print("Set Train #" .. i .. " to City Speeds")
+                if nodeData ~= nil then
+                    if nodeData.entity ~= train and nodeData.speed < data.currentSpeed then
+                        TrainEntities[i].data.speedOverrideActive = true
+                        SetTrainCruiseSpeed(train, nodeData.speed)
+                        TrainEntities[i].data.currentSpeed = nodeData.speed
+
+                        print("Train #" .. i .. " slowed down to a train ahead. Train ahead is #" .. nodeData.id)
+                    end
+                else
+                    -- Reset
+                    if data.speedOverrideActive == true then
+                        TrainEntities[i].data.speedOverrideActive = false
+                        TrainEntities[i].data.currentZone = -1
+
+                        print("Train #" .. i .. " is no longer needing to slow down for a train ahead.")
+                    end
+                end
+
+                -- Update Node
+                local setNodeSpeed = data.currentSpeed * 0.5
+                if setNodeSpeed <= 2.5 then setNodeSpeed = 2.5 end
+
+                TrainNodes[currentNode] = {
+                    speed = setNodeSpeed,
+                    expire = GetGameTimer() + 300000,
+                    entity = train,
+                    id = i,
+                }
+
+                -- Check for surrounding stopped trains
+                if data.currentSpeed > 0 then
+                    for j, entity2 in pairs(TrainEntities) do
+                        if i ~= j then
+                            local train2 = entity2.train
+                            local data2 = entity2.data
+                            local trainCoords2 = GetEntityCoords(train2)
+
+                            if data2.currentSpeed == 0 and #(trainCoords - trainCoords2) < 1000.0 then
+                                SetTrainCruiseSpeed(train, 0.0)
+                                TrainEntities[i].data.speedOverrideActive = true
+                                TrainEntities[i].data.currentSpeed = 0.0
+                                TrainEntities[i].data.derailOverrideActive = true
+
+                                print("Stopping train #" ..
+                                    i ..
+                                    " due to train stopped in the area. This only happens when another train derails")
+                            end
+                        end
+                    end
+                end
+
+                -- Detrailment
+                if GetEntityHealth(train) < 1000 then
+                    SetRenderTrainAsDerailed(train, true)
+                    SetTrainCruiseSpeed(train, 0.0)
+                    TrainEntities[i].data.derailed = true
+                    TrainEntities[i].data.currentSpeed = 0
+
+                    local postal = exports["nearest-postal"]:getPostal()
+                    local playerCoords = GetEntityCoords(PlayerPedId())
+                    local hStreet, hCross = GetStreetNameAtCoord(playerCoords[1], playerCoords[2], playerCoords[3])
+                    local streetName, crossStreet = GetStreetNameFromHashKey(hStreet), GetStreetNameFromHashKey(hCross)
+                    local street = streetName .. " / " .. crossStreet
+
+                    TriggerServerEvent("CR.Trains:Derailment", postal, street)
+
+                    print("Derail! Train #" .. i .. " is derailed!")
                 end
             end
-
-            -- Remove Expired Nodes
-            for nodeId, nodeData in pairs(TrainNodes) do
-                if GetGameTimer() > nodeData.expire then
-                    TrainNodes[nodeId] = nil
-                    print("Node " .. nodeId .. " expired.")
-                end
-            end
-
-            -- Utilizing nodes to slow down trains behind a slower train
-            local currentNode = getCurrentTrainNode(train)
-            local nodeData = TrainNodes[currentNode]
-
-            if nodeData ~= nil then
-                if nodeData.entity ~= train and nodeData.speed < data.currentSpeed then
-                    TrainEntities[i].data.speedOverrideActive = true
-                    SetTrainCruiseSpeed(train, nodeData.speed)
-                    TrainEntities[i].data.currentSpeed = nodeData.speed
-
-                    print("Train #" .. i .. " slowed down to a train ahead. Train ahead is #" .. nodeData.id)
-                end
-            else
-                -- Reset
-                if data.speedOverrideActive == true then
-                    TrainEntities[i].data.speedOverrideActive = false
-                    TrainEntities[i].data.currentZone = -1
-
-                    print("Train #" .. i .. " is no longer needing to slow down for a train ahead.")
-                end
-            end
-
-            TrainNodes[currentNode] = {
-                speed = data.currentSpeed * 0.5,
-                expire = GetGameTimer() + 300000,
-                entity = train,
-                id = i,
-            }
         end
     end
 end)
@@ -459,5 +496,21 @@ AddEventHandler('onResourceStop', function(resourceName)
     if GetCurrentResourceName() == resourceName then
         print("Resource stopping, deleting current trains")
         DeleteAllTrains()
+    end
+end)
+
+local function addSpacesBetweenCharacters(input)
+    local output = input:gsub(".", "%0 ")
+
+    return output:sub(1, -2) -- Remove the trailing space
+end
+
+RegisterNetEvent("CR.Trains:NotifyDerailment", function(postal, street)
+    if GetVehicleClass(GetVehiclePedIsIn(PlayerPedId(), false)) == 18 then
+        exports["xsound"]:TextToSpeech("trafficcamalert", "en-US",
+            "AUTOMATED EMERGENCY BROADCAST. " ..
+            addSpacesBetweenCharacters(postal) ..
+            " " .. street .. ". TRAIN DERAILMENT. TRAIN DERAILMENT. TRAIN DERAILMENT.",
+            0.75)
     end
 end)

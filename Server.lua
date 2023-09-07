@@ -122,3 +122,34 @@ end)
 RegisterNetEvent("CR.Trains:LoadedModel", function()
     LoadMdelCallback = true
 end)
+
+local function roundToNearestHundred(postalCode)
+    local divided = postalCode / 100
+    local block = math.floor(divided) * 100
+    return block
+end
+
+RegisterNetEvent("CR.Trains:Derailment", function(postal, street)
+    local function apicb()
+    end
+
+    exports["sonorancad"]:performApiRequest({ {
+        ["serverId"] = GetConvar("sonoran_serverId", 1),
+        ["origin"] = 1,
+        ["status"] = 0,
+        ["priority"] = 1,
+        ["block"] = roundToNearestHundred(postal),
+        ["address"] = street,
+        ["postal"] = postal,
+        ["code"] = "964 - TRAIN DERAILMENT",
+        ["title"] = "Train Derailment",
+        ["description"] = "A train has derailed. No further 10-43.",
+        ["notes"] = {},
+        ["units"] = {},
+        ["primary"] = nil,
+        ["trackPrimary"] = false,
+        ["metaData"] = {},
+    } }, "NEW_DISPATCH", apicb)
+
+    TriggerClientEvent("CR.Trains:NotifyDerailment", -1, postal, street)
+end)
