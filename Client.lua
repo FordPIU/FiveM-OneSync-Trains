@@ -112,21 +112,21 @@ local Variations = {
     [104] = {Name = "med_streak13", Speed = 7.5},
     [105] = {Name = "med_streak14", Speed = 7.5},
     [106] = {Name = "med_streak15", Speed = 7.5},
-        [107] = { Name = "long_streak01", Speed = 20.0 },
-        [108] = { Name = "long_streak02", Speed = 20.0 },
-        [109] = { Name = "long_streak03", Speed = 20.0 },
-        [110] = { Name = "long_streak04", Speed = 20.0 },
-        [111] = { Name = "long_streak05", Speed = 20.0 },
-        [112] = { Name = "long_streak06", Speed = 20.0 },
-        [113] = { Name = "long_streak07", Speed = 20.0 },
-        [114] = { Name = "long_streak08", Speed = 20.0 },
-        [115] = { Name = "long_streak09", Speed = 20.0 },]]
-        [116] = { Name = "long_streak10", Speed = 20.0 },
-        [117] = { Name = "long_streak11", Speed = 20.0 },
-        [118] = { Name = "long_streak12", Speed = 20.0 },
-        [119] = { Name = "long_streak13", Speed = 20.0 },
-        [120] = { Name = "long_streak14", Speed = 20.0 },
-        [121] = { Name = "long_streak15", Speed = 20.0 },
+        [107] = { Name = "long_streak01", Speed = 7.5 },
+        [108] = { Name = "long_streak02", Speed = 7.5 },
+        [109] = { Name = "long_streak03", Speed = 7.5 },
+        [110] = { Name = "long_streak04", Speed = 7.5 },
+        [111] = { Name = "long_streak05", Speed = 7.5 },
+        [112] = { Name = "long_streak06", Speed = 7.5 },
+        [113] = { Name = "long_streak07", Speed = 7.5 },
+        [114] = { Name = "long_streak08", Speed = 7.5 },
+        [115] = { Name = "long_streak09", Speed = 7.5 },]]
+        [116] = { Name = "long_streak10", Speed = 7.5 },
+        [117] = { Name = "long_streak11", Speed = 7.5 },
+        [118] = { Name = "long_streak12", Speed = 7.5 },
+        [119] = { Name = "long_streak13", Speed = 7.5 },
+        [120] = { Name = "long_streak14", Speed = 7.5 },
+        [121] = { Name = "long_streak15", Speed = 7.5 },
     }
 }
 
@@ -144,7 +144,11 @@ local Spawns = {
         vector3(1164.0, 6433.0, 32.0),
         vector3(2106.95, 1499.16, 79.2),
         vector3(2638.75, 121.01, 93.91),
-        vector3(2643.33, 120.08, 93.91)
+        vector3(2643.33, 120.08, 93.91),
+        vector3(534.55, -1224.36, 29.86),
+        vector3(529.8, -1225.04, 29.86),
+        vector3(692.21, -3125.75, 6.02),
+        vector3(696.96, -3125.62, 6.02)
     }
 }
 
@@ -155,18 +159,18 @@ local TrainNodes = {}
 
 ---Load Train Models into Memory
 local function loadTrainModels()
-    --print("Loading Train Models")
+    print("Loading Train Models")
 
     for i, v in pairs(Models) do
         RequestModel(v)
 
         while not HasModelLoaded(v) do
             Wait(10)
-            --print("Loading Model " .. i)
+            print("Loading Model " .. i)
         end
     end
 
-    --print("Loaded all Train Models")
+    print("Loaded all Train Models")
 end
 
 ---Get all valid indexes of a table
@@ -191,7 +195,6 @@ local function newEntityNetworking(Entity)
     SetNetworkIdExistsOnAllMachines(Entity_ID, true)
     SetNetworkIdCanMigrate(Entity_ID, false)
 
-    -- Need to reimplement this on the server side
     TriggerServerEvent('CR.Trains:SetCullingDistance', Entity_ID)
 end
 
@@ -230,35 +233,32 @@ end
 
 ---Get the Train Variation Data
 ---@param Type string "Metro", otherwise defaults to Freight/Passenger
----@return table Data contains the variation id, spawn position, direction, and speed.
+---@return table Data contains the variation id and speed.
 local function getVariation(Type)
     local trainsTable = Variations[Type]
-    local spawnPoints = Spawns[Type]
 
     local trainsTableIndexs = loadValidIndexes(trainsTable)
     local randomIndex = trainsTableIndexs[math.random(1, #trainsTableIndexs)]
     local trainVariationId, trainData = randomIndex, trainsTable[randomIndex]
-    local trainSpawn = spawnPoints[math.random(1, #spawnPoints)]
-    local trainSpawnPosition = vector3(trainSpawn[1], trainSpawn[2], trainSpawn[3])
     local trainSpeed = trainData.Speed
 
-    --print("Call to get " ..
-    --Type .. " Variation, Returning Variation #" .. trainVariationId .. ", Config: " .. trainData.Name)
-    --print("Spawning at " .. trainSpawnPosition)
+    print("Call to get " ..
+        Type .. " Variation, Returning Variation #" .. trainVariationId .. ", Config: " .. trainData.Name)
 
-    return { trainVariationId, trainSpawnPosition, trainSpeed }
+    return { trainVariationId, trainSpeed }
 end
 
 ---Creates a new train
 ---@param TrainData table fetched via getVariation()
+---@param spawnCoords vector3 spawn coords
 ---@return entity Train
 ---@return entity Driver
-local function createTrain(TrainData)
+local function createTrain(TrainData, spawnCoords)
     local Spawn_Variation = TrainData[1]
-    local Spawn_Coords = TrainData[2]
+    local Spawn_Coords = spawnCoords
 
     if spawnCoordsDelay[Spawn_Coords] and GetGameTimer() < spawnCoordsDelay[Spawn_Coords] then
-        --print("Attempting a 2nd spawn at same pos, delaying...")
+        print("Attempting a 2nd spawn at same pos, delaying...")
         local nooneNear = true
         repeat
             Wait(0)
@@ -270,7 +270,7 @@ local function createTrain(TrainData)
                 end
             end
         until nooneNear
-        --print("Delay finished..")
+        print("Delay finished..")
     end
 
     local Spawn_Entity = CreateMissionTrain(Spawn_Variation, Spawn_Coords[1], Spawn_Coords[2], Spawn_Coords[3],
@@ -280,15 +280,15 @@ local function createTrain(TrainData)
         Wait(10)
     end
 
-    setTrainFuncts(Spawn_Entity, TrainData[3])
+    setTrainFuncts(Spawn_Entity, TrainData[2])
 
     local Spawn_Driver = createDriverInsideTrain(Spawn_Entity)
-    --[[local blip = AddBlipForEntity(Spawn_Entity)
+    local blip = AddBlipForEntity(Spawn_Entity)
     SetBlipSprite(blip, 795)
-    SetBlipColour(blip, 27)]]
+    SetBlipColour(blip, 27)
     spawnCoordsDelay[Spawn_Coords] = GetGameTimer() + 240000
 
-    --print("Created Train Entity w/ Variation " .. Spawn_Variation)
+    print("Created Train Entity w/ Variation " .. Spawn_Variation)
 
     return Spawn_Entity, Spawn_Driver
 end
@@ -311,33 +311,29 @@ end
 ---Spawn Metro & Normal Trains
 function SpawnTrains()
     if TrainsSpawned then return else TrainsSpawned = true end
-    local MetroCount = math.random(1, 4)
-    local FreightCount = math.random(3, 10)
 
-    --print("\nSpawning " .. MetroCount .. " Metros")
-    for i = 1, MetroCount do
-        --print("Getting Data for Metro Train #" .. i)
+    for i, spawnCoords in pairs(Spawns.Metro) do
+        print("Getting Data for Metro Train #" .. i)
         local Metro_Data = getVariation("Metro")
 
-        --print("Creating Metro Train #" .. i)
-        createTrain(Metro_Data)
+        print("Creating Metro Train #" .. i)
+        createTrain(Metro_Data, spawnCoords)
     end
 
-    --print("\nSpawning " .. FreightCount .. " Freight Trains")
-    for i = 1, FreightCount do
-        --print("Getting Data for Freight Train #" .. i)
+    for i, spawnCoords in pairs(Spawns.Freight) do
+        print("Getting Data for Freight Train #" .. i)
         local Freight_Data = getVariation("Freight")
 
-        --print("Creating Freight Train #" .. i)
-        local trainEntity, driverEntity = createTrain(Freight_Data)
+        print("Creating Freight Train #" .. i)
+        local trainEntity, driverEntity = createTrain(Freight_Data, spawnCoords)
 
         TrainEntities[#TrainEntities + 1] = {
             train = trainEntity,
             driver = driverEntity,
             data = {
-                defaultSpeed = Freight_Data[3],
+                defaultSpeed = Freight_Data[2],
                 currentZone = nil,
-                currentSpeed = Freight_Data[3],
+                currentSpeed = Freight_Data[2],
                 speedOverrideActive = false
             }
         }
@@ -381,17 +377,17 @@ Citizen.CreateThread(function()
                     TrainEntities[i].data.currentZone = 1
                     TrainEntities[i].data.currentSpeed = data.defaultSpeed * 5
 
-                    --print("Set Train #" .. i .. " to County Speeds")
+                    print("Set Train #" .. i .. " to County Speeds")
                 end
 
                 -- City Speed
                 if trainCoords[2] < -450.0 and (data.currentZone == nil or data.currentZone == 1 or data.currentZone == -1) then
-                    SetTrainCruiseSpeed(train, data.defaultSpeed * 0.5)
+                    SetTrainCruiseSpeed(train, data.defaultSpeed * 0.75)
 
                     TrainEntities[i].data.currentZone = 0
-                    TrainEntities[i].data.currentSpeed = data.defaultSpeed * 0.5
+                    TrainEntities[i].data.currentSpeed = data.defaultSpeed * 0.75
 
-                    --print("Set Train #" .. i .. " to City Speeds")
+                    print("Set Train #" .. i .. " to City Speeds")
                 end
             end
 
@@ -399,7 +395,7 @@ Citizen.CreateThread(function()
             for nodeId, nodeData in pairs(TrainNodes) do
                 if GetGameTimer() > nodeData.expire then
                     TrainNodes[nodeId] = nil
-                    --print("Node " .. nodeId .. " expired.")
+                    print("Node " .. nodeId .. " expired.")
                 end
             end
 
@@ -413,7 +409,7 @@ Citizen.CreateThread(function()
                     SetTrainCruiseSpeed(train, nodeData.speed)
                     TrainEntities[i].data.currentSpeed = nodeData.speed
 
-                    --print("Train #" .. i .. " slowed down to a train ahead. Train ahead is #" .. nodeData.id)
+                    print("Train #" .. i .. " slowed down to a train ahead. Train ahead is #" .. nodeData.id)
                 end
             else
                 -- Reset
@@ -421,7 +417,7 @@ Citizen.CreateThread(function()
                     TrainEntities[i].data.speedOverrideActive = false
                     TrainEntities[i].data.currentZone = -1
 
-                    --print("Train #" .. i .. " is no longer needing to slow down for a train ahead.")
+                    print("Train #" .. i .. " is no longer needing to slow down for a train ahead.")
                 end
             end
 
@@ -437,13 +433,13 @@ end)
 
 ---Events
 RegisterNetEvent("CR.Trains:SelectedHost", function()
-    --print("Requested to be new host, waiting to fully load in")
+    print("Requested to be new host, waiting to fully load in")
     repeat
         Wait(0)
     until DoesEntityExist(PlayerPedId())
-    --print("Fully loaded in, ensuring all players have requested the models")
+    print("Fully loaded in, ensuring all players have requested the models")
     waitForAllPlayersToLoadModels()
-    --print("All loaded models, Spawning...")
+    print("All loaded models, Spawning...")
     SpawnTrains()
 end)
 
@@ -461,7 +457,7 @@ end)
 
 AddEventHandler('onResourceStop', function(resourceName)
     if GetCurrentResourceName() == resourceName then
-        --print("Resource stopping, deleting current trains")
+        print("Resource stopping, deleting current trains")
         DeleteAllTrains()
     end
 end)
